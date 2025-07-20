@@ -1,6 +1,5 @@
 {
   "name": "Node API Dev",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -18,6 +17,7 @@
   "postCreateCommand": "npm install",
   "forwardPorts": [3000],
   "build": {
-    "dockerfile": "Dockerfile"
+    "context": "..",
+    "dockerfile": ".devcontainer/Dockerfile"
   }
 }
